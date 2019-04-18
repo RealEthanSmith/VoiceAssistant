@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24DCCBBC226830FD0034BAC5 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DCCBBB226830FD0034BAC5 /* CircleButton.swift */; };
 		24FF2A242267E44900343FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2A232267E44900343FCF /* AppDelegate.swift */; };
 		24FF2A262267E44900343FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2A252267E44900343FCF /* ViewController.swift */; };
 		24FF2A292267E44900343FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FF2A272267E44900343FCF /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24DCCBBB226830FD0034BAC5 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		24FF2A202267E44900343FCF /* Voice Assist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voice Assist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FF2A232267E44900343FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		24FF2A252267E44900343FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -101,8 +103,7 @@
 			children = (
 				24FF2A232267E44900343FCF /* AppDelegate.swift */,
 				24FF2A252267E44900343FCF /* ViewController.swift */,
-				24FF2A512267F22D00343FCF /* UniversalThings.swift */,
-				24FF2A542268308300343FCF /* New Group */,
+				24FF2A542268308300343FCF /* Extras */,
 				24FF2A272267E44900343FCF /* Main.storyboard */,
 				24FF2A2A2267E44D00343FCF /* Assets.xcassets */,
 				24FF2A2C2267E44D00343FCF /* LaunchScreen.storyboard */,
@@ -129,11 +130,13 @@
 			path = "Voice AssistUITests";
 			sourceTree = "<group>";
 		};
-		24FF2A542268308300343FCF /* New Group */ = {
+		24FF2A542268308300343FCF /* Extras */ = {
 			isa = PBXGroup;
 			children = (
+				24FF2A512267F22D00343FCF /* UniversalThings.swift */,
+				24DCCBBB226830FD0034BAC5 /* CircleButton.swift */,
 			);
-			path = "New Group";
+			path = Extras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,6 +273,7 @@
 				24FF2A522267F22D00343FCF /* UniversalThings.swift in Sources */,
 				24FF2A262267E44900343FCF /* ViewController.swift in Sources */,
 				24FF2A242267E44900343FCF /* AppDelegate.swift in Sources */,
+				24DCCBBC226830FD0034BAC5 /* CircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,11 @@ class ViewController: UIViewController {
     }
 
     @IBAction func pressForVoice(_ sender: Any) {
-        talk(wordsToSpeak: voiceWords.text!)
+        if voiceWords.text != nil {
+             talk(wordsToSpeak: voiceWords.text!)
+        } else if voiceWords.text == nil || voiceWords.text == ""{
+             talk(wordsToSpeak: defaultTalk)
+        }
     }
     
     

@@ -18,9 +18,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDb-2q-aUB">
-                                <rect key="frame" x="164" y="428" width="87" height="84"/>
+                                <rect key="frame" x="78" y="281" width="258" height="88"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="WDb-2q-aUB" secondAttribute="height" multiplier="29:28" id="awc-jp-ZDa"/>
+                                    <constraint firstAttribute="height" constant="88" id="3Do-4N-BEh"/>
                                 </constraints>
                                 <state key="normal" title="Voice Button" image="Voice Vector"/>
                                 <connections>
@@ -28,7 +28,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HLn-gd-nce">
-                                <rect key="frame" x="20" y="368" width="374" height="30"/>
+                                <rect key="frame" x="20" y="226" width="374" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="5sV-iG-O0l"/>
                                 </constraints>
@@ -36,29 +36,52 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arh-Qd-8zC">
-                                <rect key="frame" x="164" y="546" width="87" height="84"/>
-                                <color key="backgroundColor" red="1" green="0.28955020381056518" blue="0.20982447639665103" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arh-Qd-8zC" customClass="CircleButton" customModule="Voice_Assist" customModuleProvider="target">
+                                <rect key="frame" x="155.5" y="422" width="103" height="103"/>
+                                <color key="backgroundColor" red="1" green="0.37499066810960047" blue="0.29091860352833732" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="arh-Qd-8zC" secondAttribute="height" multiplier="29:28" id="Ise-MN-TEB"/>
+                                    <constraint firstAttribute="height" constant="103" id="WFh-qp-TkB"/>
+                                    <constraint firstAttribute="width" constant="103" id="xxK-Qe-kFv"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="CornerRadius">
+                                        <real key="value" value="51.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="pressForVoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RVf-h3-xsG"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--Commands--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgF-En-dTB">
+                                <rect key="frame" x="20" y="590" width="374" height="37"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="31"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Turn on lights: &quot;Power Up&quot; Shut it off: &quot;Power Down&quot; Systems Report: &quot;Report&quot;" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="2kO-ae-5ca">
+                                <rect key="frame" x="20" y="616" width="374" height="138"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="30"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HLn-gd-nce" secondAttribute="trailing" constant="20" id="1eY-zI-O7d"/>
-                            <constraint firstItem="arh-Qd-8zC" firstAttribute="top" secondItem="WDb-2q-aUB" secondAttribute="bottom" constant="34" id="2Ha-IV-8di"/>
+                            <constraint firstItem="2kO-ae-5ca" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="2DV-WC-G54"/>
                             <constraint firstItem="HLn-gd-nce" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4OR-tW-fAa"/>
-                            <constraint firstItem="HLn-gd-nce" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="324" id="5bM-Tv-5yI"/>
-                            <constraint firstItem="WDb-2q-aUB" firstAttribute="top" secondItem="HLn-gd-nce" secondAttribute="bottom" constant="30" id="Cm6-wk-3sR"/>
-                            <constraint firstItem="arh-Qd-8zC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="PCQ-4c-l81"/>
-                            <constraint firstItem="WDb-2q-aUB" firstAttribute="top" secondItem="HLn-gd-nce" secondAttribute="bottom" constant="30" id="hbG-uR-zyG"/>
-                            <constraint firstItem="WDb-2q-aUB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="osD-Ow-xmz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="arh-Qd-8zC" secondAttribute="trailing" constant="163" id="qdk-nt-9pS"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WDb-2q-aUB" secondAttribute="trailing" constant="163" id="uae-EH-DaN"/>
+                            <constraint firstItem="HLn-gd-nce" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="182" id="5bM-Tv-5yI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2kO-ae-5ca" secondAttribute="bottom" constant="108" id="6Ha-4E-M4U"/>
+                            <constraint firstItem="arh-Qd-8zC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9YI-u2-2fl"/>
+                            <constraint firstItem="WDb-2q-aUB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ahj-7X-Ko8"/>
+                            <constraint firstItem="WDb-2q-aUB" firstAttribute="top" secondItem="HLn-gd-nce" secondAttribute="bottom" constant="25" id="IBq-zC-08H"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2kO-ae-5ca" secondAttribute="trailing" constant="20" id="LU9-mN-lQS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QgF-En-dTB" secondAttribute="trailing" constant="20" id="Q2t-w7-5vB"/>
+                            <constraint firstItem="QgF-En-dTB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="ZyC-MJ-rCR"/>
+                            <constraint firstItem="HLn-gd-nce" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fOB-Tq-Wbc"/>
+                            <constraint firstItem="arh-Qd-8zC" firstAttribute="top" secondItem="WDb-2q-aUB" secondAttribute="bottom" constant="53" id="hOC-L5-4BS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QgF-En-dTB" secondAttribute="bottom" constant="235" id="n4f-Fo-3JT"/>
+                            <constraint firstItem="2kO-ae-5ca" firstAttribute="top" secondItem="arh-Qd-8zC" secondAttribute="bottom" constant="91" id="zHA-XD-Uen"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
