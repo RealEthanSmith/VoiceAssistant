@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		24FF2A242267E44900343FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2A232267E44900343FCF /* AppDelegate.swift */; };
+		24FF2A262267E44900343FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2A252267E44900343FCF /* ViewController.swift */; };
+		24FF2A292267E44900343FCF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FF2A272267E44900343FCF /* Main.storyboard */; };
+		24FF2A2B2267E44D00343FCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24FF2A2A2267E44D00343FCF /* Assets.xcassets */; };
+		24FF2A2E2267E44D00343FCF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 24FF2A2C2267E44D00343FCF /* LaunchScreen.storyboard */; };
+		24FF2A392267E44D00343FCF /* Voice_AssistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2A382267E44D00343FCF /* Voice_AssistTests.swift */; };
+		24FF2A442267E44D00343FCF /* Voice_AssistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2A432267E44D00343FCF /* Voice_AssistUITests.swift */; };
+		24FF2A522267F22D00343FCF /* UniversalThings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2A512267F22D00343FCF /* UniversalThings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		24FF2A352267E44D00343FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24FF2A182267E44900343FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24FF2A1F2267E44900343FCF;
+			remoteInfo = "Voice Assist";
+		};
+		24FF2A402267E44D00343FCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 24FF2A182267E44900343FCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 24FF2A1F2267E44900343FCF;
+			remoteInfo = "Voice Assist";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24FF2A202267E44900343FCF /* Voice Assist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voice Assist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FF2A232267E44900343FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		24FF2A252267E44900343FCF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		24FF2A282267E44900343FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		24FF2A2A2267E44D00343FCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		24FF2A2D2267E44D00343FCF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		24FF2A2F2267E44D00343FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24FF2A342267E44D00343FCF /* Voice AssistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voice AssistTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FF2A382267E44D00343FCF /* Voice_AssistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_AssistTests.swift; sourceTree = "<group>"; };
+		24FF2A3A2267E44D00343FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24FF2A3F2267E44D00343FCF /* Voice AssistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Voice AssistUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		24FF2A432267E44D00343FCF /* Voice_AssistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Voice_AssistUITests.swift; sourceTree = "<group>"; };
+		24FF2A452267E44D00343FCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		24FF2A512267F22D00343FCF /* UniversalThings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniversalThings.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		24FF2A1D2267E44900343FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FF2A312267E44D00343FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FF2A3C2267E44D00343FCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		24FF2A172267E44900343FCF = {
+			isa = PBXGroup;
+			children = (
+				24FF2A222267E44900343FCF /* Voice Assist */,
+				24FF2A372267E44D00343FCF /* Voice AssistTests */,
+				24FF2A422267E44D00343FCF /* Voice AssistUITests */,
+				24FF2A212267E44900343FCF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		24FF2A212267E44900343FCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2A202267E44900343FCF /* Voice Assist.app */,
+				24FF2A342267E44D00343FCF /* Voice AssistTests.xctest */,
+				24FF2A3F2267E44D00343FCF /* Voice AssistUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		24FF2A222267E44900343FCF /* Voice Assist */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2A232267E44900343FCF /* AppDelegate.swift */,
+				24FF2A252267E44900343FCF /* ViewController.swift */,
+				24FF2A512267F22D00343FCF /* UniversalThings.swift */,
+				24FF2A542268308300343FCF /* New Group */,
+				24FF2A272267E44900343FCF /* Main.storyboard */,
+				24FF2A2A2267E44D00343FCF /* Assets.xcassets */,
+				24FF2A2C2267E44D00343FCF /* LaunchScreen.storyboard */,
+				24FF2A2F2267E44D00343FCF /* Info.plist */,
+			);
+			path = "Voice Assist";
+			sourceTree = "<group>";
+		};
+		24FF2A372267E44D00343FCF /* Voice AssistTests */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2A382267E44D00343FCF /* Voice_AssistTests.swift */,
+				24FF2A3A2267E44D00343FCF /* Info.plist */,
+			);
+			path = "Voice AssistTests";
+			sourceTree = "<group>";
+		};
+		24FF2A422267E44D00343FCF /* Voice AssistUITests */ = {
+			isa = PBXGroup;
+			children = (
+				24FF2A432267E44D00343FCF /* Voice_AssistUITests.swift */,
+				24FF2A452267E44D00343FCF /* Info.plist */,
+			);
+			path = "Voice AssistUITests";
+			sourceTree = "<group>";
+		};
+		24FF2A542268308300343FCF /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		24FF2A1F2267E44900343FCF /* Voice Assist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FF2A482267E44D00343FCF /* Build configuration list for PBXNativeTarget "Voice Assist" */;
+			buildPhases = (
+				24FF2A1C2267E44900343FCF /* Sources */,
+				24FF2A1D2267E44900343FCF /* Frameworks */,
+				24FF2A1E2267E44900343FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Voice Assist";
+			productName = "Voice Assist";
+			productReference = 24FF2A202267E44900343FCF /* Voice Assist.app */;
+			productType = "com.apple.product-type.application";
+		};
+		24FF2A332267E44D00343FCF /* Voice AssistTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FF2A4B2267E44D00343FCF /* Build configuration list for PBXNativeTarget "Voice AssistTests" */;
+			buildPhases = (
+				24FF2A302267E44D00343FCF /* Sources */,
+				24FF2A312267E44D00343FCF /* Frameworks */,
+				24FF2A322267E44D00343FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24FF2A362267E44D00343FCF /* PBXTargetDependency */,
+			);
+			name = "Voice AssistTests";
+			productName = "Voice AssistTests";
+			productReference = 24FF2A342267E44D00343FCF /* Voice AssistTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		24FF2A3E2267E44D00343FCF /* Voice AssistUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 24FF2A4E2267E44D00343FCF /* Build configuration list for PBXNativeTarget "Voice AssistUITests" */;
+			buildPhases = (
+				24FF2A3B2267E44D00343FCF /* Sources */,
+				24FF2A3C2267E44D00343FCF /* Frameworks */,
+				24FF2A3D2267E44D00343FCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				24FF2A412267E44D00343FCF /* PBXTargetDependency */,
+			);
+			name = "Voice AssistUITests";
+			productName = "Voice AssistUITests";
+			productReference = 24FF2A3F2267E44D00343FCF /* Voice AssistUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		24FF2A182267E44900343FCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Emmett Shaughnessy";
+				TargetAttributes = {
+					24FF2A1F2267E44900343FCF = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					24FF2A332267E44D00343FCF = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 24FF2A1F2267E44900343FCF;
+					};
+					24FF2A3E2267E44D00343FCF = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = 24FF2A1F2267E44900343FCF;
+					};
+				};
+			};
+			buildConfigurationList = 24FF2A1B2267E44900343FCF /* Build configuration list for PBXProject "Voice Assist" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 24FF2A172267E44900343FCF;
+			productRefGroup = 24FF2A212267E44900343FCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				24FF2A1F2267E44900343FCF /* Voice Assist */,
+				24FF2A332267E44D00343FCF /* Voice AssistTests */,
+				24FF2A3E2267E44D00343FCF /* Voice AssistUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		24FF2A1E2267E44900343FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FF2A2E2267E44D00343FCF /* LaunchScreen.storyboard in Resources */,
+				24FF2A2B2267E44D00343FCF /* Assets.xcassets in Resources */,
+				24FF2A292267E44900343FCF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FF2A322267E44D00343FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FF2A3D2267E44D00343FCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24FF2A1C2267E44900343FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FF2A522267F22D00343FCF /* UniversalThings.swift in Sources */,
+				24FF2A262267E44900343FCF /* ViewController.swift in Sources */,
+				24FF2A242267E44900343FCF /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FF2A302267E44D00343FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FF2A392267E44D00343FCF /* Voice_AssistTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		24FF2A3B2267E44D00343FCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				24FF2A442267E44D00343FCF /* Voice_AssistUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		24FF2A362267E44D00343FCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24FF2A1F2267E44900343FCF /* Voice Assist */;
+			targetProxy = 24FF2A352267E44D00343FCF /* PBXContainerItemProxy */;
+		};
+		24FF2A412267E44D00343FCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 24FF2A1F2267E44900343FCF /* Voice Assist */;
+			targetProxy = 24FF2A402267E44D00343FCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		24FF2A272267E44900343FCF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24FF2A282267E44900343FCF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		24FF2A2C2267E44D00343FCF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				24FF2A2D2267E44D00343FCF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		24FF2A462267E44D00343FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		24FF2A472267E44D00343FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		24FF2A492267E44D00343FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9D5379H93;
+				INFOPLIST_FILE = "Voice Assist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onpointech.Voice-Assist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		24FF2A4A2267E44D00343FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9D5379H93;
+				INFOPLIST_FILE = "Voice Assist/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onpointech.Voice-Assist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		24FF2A4C2267E44D00343FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9D5379H93;
+				INFOPLIST_FILE = "Voice AssistTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onpointech.Voice-AssistTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voice Assist.app/Voice Assist";
+			};
+			name = Debug;
+		};
+		24FF2A4D2267E44D00343FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9D5379H93;
+				INFOPLIST_FILE = "Voice AssistTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onpointech.Voice-AssistTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Voice Assist.app/Voice Assist";
+			};
+			name = Release;
+		};
+		24FF2A4F2267E44D00343FCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9D5379H93;
+				INFOPLIST_FILE = "Voice AssistUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onpointech.Voice-AssistUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Voice Assist";
+			};
+			name = Debug;
+		};
+		24FF2A502267E44D00343FCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M9D5379H93;
+				INFOPLIST_FILE = "Voice AssistUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.onpointech.Voice-AssistUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Voice Assist";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		24FF2A1B2267E44900343FCF /* Build configuration list for PBXProject "Voice Assist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FF2A462267E44D00343FCF /* Debug */,
+				24FF2A472267E44D00343FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FF2A482267E44D00343FCF /* Build configuration list for PBXNativeTarget "Voice Assist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FF2A492267E44D00343FCF /* Debug */,
+				24FF2A4A2267E44D00343FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FF2A4B2267E44D00343FCF /* Build configuration list for PBXNativeTarget "Voice AssistTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FF2A4C2267E44D00343FCF /* Debug */,
+				24FF2A4D2267E44D00343FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		24FF2A4E2267E44D00343FCF /* Build configuration list for PBXNativeTarget "Voice AssistUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				24FF2A4F2267E44D00343FCF /* Debug */,
+				24FF2A502267E44D00343FCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 24FF2A182267E44900343FCF /* Project object */;
+}

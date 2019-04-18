@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Voice_Assist" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDb-2q-aUB">
+                                <rect key="frame" x="164" y="428" width="87" height="84"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="WDb-2q-aUB" secondAttribute="height" multiplier="29:28" id="awc-jp-ZDa"/>
+                                </constraints>
+                                <state key="normal" title="Voice Button" image="Voice Vector"/>
+                                <connections>
+                                    <action selector="pressForVoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nky-m1-fTH"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HLn-gd-nce">
+                                <rect key="frame" x="20" y="368" width="374" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5sV-iG-O0l"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="arh-Qd-8zC">
+                                <rect key="frame" x="164" y="546" width="87" height="84"/>
+                                <color key="backgroundColor" red="1" green="0.28955020381056518" blue="0.20982447639665103" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="arh-Qd-8zC" secondAttribute="height" multiplier="29:28" id="Ise-MN-TEB"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="pressForVoice:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RVf-h3-xsG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HLn-gd-nce" secondAttribute="trailing" constant="20" id="1eY-zI-O7d"/>
+                            <constraint firstItem="arh-Qd-8zC" firstAttribute="top" secondItem="WDb-2q-aUB" secondAttribute="bottom" constant="34" id="2Ha-IV-8di"/>
+                            <constraint firstItem="HLn-gd-nce" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4OR-tW-fAa"/>
+                            <constraint firstItem="HLn-gd-nce" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="324" id="5bM-Tv-5yI"/>
+                            <constraint firstItem="WDb-2q-aUB" firstAttribute="top" secondItem="HLn-gd-nce" secondAttribute="bottom" constant="30" id="Cm6-wk-3sR"/>
+                            <constraint firstItem="arh-Qd-8zC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="PCQ-4c-l81"/>
+                            <constraint firstItem="WDb-2q-aUB" firstAttribute="top" secondItem="HLn-gd-nce" secondAttribute="bottom" constant="30" id="hbG-uR-zyG"/>
+                            <constraint firstItem="WDb-2q-aUB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="osD-Ow-xmz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="arh-Qd-8zC" secondAttribute="trailing" constant="163" id="qdk-nt-9pS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WDb-2q-aUB" secondAttribute="trailing" constant="163" id="uae-EH-DaN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="WDb-2q-aUB" id="hSI-55-BMN"/>
+                        <outlet property="voiceWords" destination="HLn-gd-nce" id="rDi-c4-ccC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Voice Vector" width="154" height="154"/>
+    </resources>
+</document>
