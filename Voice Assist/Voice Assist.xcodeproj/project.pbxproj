@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24C730C9226A628100CF6CFB /* PushLinkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C730C8226A628100CF6CFB /* PushLinkVC.swift */; };
+		24C730CB226A62A500CF6CFB /* BridgeSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C730CA226A62A500CF6CFB /* BridgeSelectionVC.swift */; };
+		24C730CD226A6B1900CF6CFB /* PHSBridgeInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C730CC226A6B1900CF6CFB /* PHSBridgeInfo.swift */; };
+		24C730D3226A91E800CF6CFB /* HueSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24C730D2226A91E800CF6CFB /* HueSDK.framework */; };
+		24C730D4226A91E800CF6CFB /* HueSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 24C730D2226A91E800CF6CFB /* HueSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		24C730D6226ACBF500CF6CFB /* bridgeDiscoveryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24C730D5226ACBF500CF6CFB /* bridgeDiscoveryController.swift */; };
 		24DCCBBC226830FD0034BAC5 /* CircleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24DCCBBB226830FD0034BAC5 /* CircleButton.swift */; };
 		24FF2A242267E44900343FCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2A232267E44900343FCF /* AppDelegate.swift */; };
 		24FF2A262267E44900343FCF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FF2A252267E44900343FCF /* ViewController.swift */; };
@@ -35,7 +41,27 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		24C730D1226A916900CF6CFB /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				24C730D4226A91E800CF6CFB /* HueSDK.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		24C730B4226A5AED00CF6CFB /* Voice Assist-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Voice Assist-Bridging-Header.h"; sourceTree = "<group>"; };
+		24C730C8226A628100CF6CFB /* PushLinkVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushLinkVC.swift; sourceTree = "<group>"; };
+		24C730CA226A62A500CF6CFB /* BridgeSelectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgeSelectionVC.swift; sourceTree = "<group>"; };
+		24C730CC226A6B1900CF6CFB /* PHSBridgeInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PHSBridgeInfo.swift; sourceTree = "<group>"; };
+		24C730D2226A91E800CF6CFB /* HueSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = HueSDK.framework; sourceTree = "<group>"; };
+		24C730D5226ACBF500CF6CFB /* bridgeDiscoveryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bridgeDiscoveryController.swift; sourceTree = "<group>"; };
 		24DCCBBB226830FD0034BAC5 /* CircleButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButton.swift; sourceTree = "<group>"; };
 		24FF2A202267E44900343FCF /* Voice Assist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Voice Assist.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		24FF2A232267E44900343FCF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24C730D3226A91E800CF6CFB /* HueSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +108,7 @@
 		24FF2A172267E44900343FCF = {
 			isa = PBXGroup;
 			children = (
+				24C730D2226A91E800CF6CFB /* HueSDK.framework */,
 				24FF2A222267E44900343FCF /* Voice Assist */,
 				24FF2A372267E44D00343FCF /* Voice AssistTests */,
 				24FF2A422267E44D00343FCF /* Voice AssistUITests */,
@@ -103,6 +131,8 @@
 			children = (
 				24FF2A232267E44900343FCF /* AppDelegate.swift */,
 				24FF2A252267E44900343FCF /* ViewController.swift */,
+				24C730C8226A628100CF6CFB /* PushLinkVC.swift */,
+				24C730CA226A62A500CF6CFB /* BridgeSelectionVC.swift */,
 				24FF2A542268308300343FCF /* Extras */,
 				24FF2A272267E44900343FCF /* Main.storyboard */,
 				24FF2A2A2267E44D00343FCF /* Assets.xcassets */,
@@ -135,6 +165,9 @@
 			children = (
 				24FF2A512267F22D00343FCF /* UniversalThings.swift */,
 				24DCCBBB226830FD0034BAC5 /* CircleButton.swift */,
+				24C730CC226A6B1900CF6CFB /* PHSBridgeInfo.swift */,
+				24C730B4226A5AED00CF6CFB /* Voice Assist-Bridging-Header.h */,
+				24C730D5226ACBF500CF6CFB /* bridgeDiscoveryController.swift */,
 			);
 			path = Extras;
 			sourceTree = "<group>";
@@ -149,6 +182,7 @@
 				24FF2A1C2267E44900343FCF /* Sources */,
 				24FF2A1D2267E44900343FCF /* Frameworks */,
 				24FF2A1E2267E44900343FCF /* Resources */,
+				24C730D1226A916900CF6CFB /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,6 +241,7 @@
 				TargetAttributes = {
 					24FF2A1F2267E44900343FCF = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 					24FF2A332267E44D00343FCF = {
 						CreatedOnToolsVersion = 10.2;
@@ -271,8 +306,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				24FF2A522267F22D00343FCF /* UniversalThings.swift in Sources */,
+				24C730C9226A628100CF6CFB /* PushLinkVC.swift in Sources */,
 				24FF2A262267E44900343FCF /* ViewController.swift in Sources */,
+				24C730D6226ACBF500CF6CFB /* bridgeDiscoveryController.swift in Sources */,
 				24FF2A242267E44900343FCF /* AppDelegate.swift in Sources */,
+				24C730CB226A62A500CF6CFB /* BridgeSelectionVC.swift in Sources */,
+				24C730CD226A6B1900CF6CFB /* PHSBridgeInfo.swift in Sources */,
 				24DCCBBC226830FD0034BAC5 /* CircleButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,6 +402,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -424,6 +464,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -448,8 +489,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9D5379H93;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Voice Assist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -458,6 +504,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.onpointech.Voice-Assist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voice Assist/Extras/Voice Assist-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -467,8 +515,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9D5379H93;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Voice Assist/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -477,6 +530,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.onpointech.Voice-Assist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Voice Assist/Extras/Voice Assist-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

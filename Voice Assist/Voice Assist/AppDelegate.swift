@@ -16,7 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        configureSDK()
         return true
+    }
+    
+    func configureSDK() {
+        PHSPersistence.setStorageLocation(NSHomeDirectory(), andDeviceId: "001122334455")
+        PHSLog.setConsoleLogLevel(.debug)
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
