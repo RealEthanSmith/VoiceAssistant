@@ -12,7 +12,7 @@ class PushLinkVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        progressBar.progress = 1
         // Do any additional setup after loading the view.
     }
     @IBOutlet weak var progressBar: UIProgressView!
@@ -27,6 +27,7 @@ class PushLinkVC: UIViewController {
     func countdownUntilTimeout() {
         let timeout:Float = 30
         var timeLeft = timeout
+        progressBar.progress = 1
         
         Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { (timer) in
             timeLeft -= 1
@@ -44,6 +45,7 @@ class PushLinkVC: UIViewController {
         
         let alertController = UIAlertController(title: "Timeout", message: timeoutString, preferredStyle: .alert)
         let retryAction = UIAlertAction(title: "Retry", style: .default) { (action) in
+            self.countdownUntilTimeout()
         }
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (action) in
             self.dismiss(animated: true, completion: nil)

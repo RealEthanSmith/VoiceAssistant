@@ -99,6 +99,8 @@ class BridgeSelectionVC: UIViewController, UITableViewDelegate, UITableViewDataS
                     self.bridges.append(bridgeInfo)
                 }
                 self.tableView.reloadData()
+            } else {
+                
             }
 
 
@@ -139,7 +141,6 @@ class BridgeSelectionVC: UIViewController, UITableViewDelegate, UITableViewDataS
         
         let alertController = UIAlertController(title: "Done Searching", message: "Press OK", preferredStyle: .alert)
         let retryAction = UIAlertAction(title: "OK", style: .default) { (action) in
-            self.refreshTableView()
         }
         
         alertController.addAction(retryAction)

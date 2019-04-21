@@ -57,12 +57,12 @@ class ViewController: UIViewController {
     
     func buildBridge(with info: PHBridgeInfo) -> PHSBridge{
         return.init(block: { (builder) in
-            builder?.connectionTypes = .local
-            builder?.ipAddress = info.ipAddress
-            builder?.bridgeID = info.uniqueID
+            builder!.connectionTypes = .local
+            builder!.ipAddress = info.ipAddress
+            builder!.bridgeID = info.uniqueID
             
-            builder?.bridgeConnectionObserver = self
-            builder?.add(self)
+            builder!.bridgeConnectionObserver = self
+            builder!.add(self)
         }, withAppName: "V-Assist", withDeviceName: "Emmett's iPhone")
     }
     
